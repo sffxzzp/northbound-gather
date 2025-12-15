@@ -39,7 +39,7 @@ function ChangeView({ center, zoom }) {
     const timer = setTimeout(() => {
       setDebouncedLocation(location);
       setIsTyping(false);
-    }, 3000); // 3 seconds debounce
+    }, 1000); // 1 second debounce
 
     return () => clearTimeout(timer);
   }, [location, disableDebounce]);
